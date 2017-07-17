@@ -1,0 +1,120 @@
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url('../fonts/PTS55F-webfont.eot');
+    src: url('../fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PTS55F-webfont.woff') format('woff'),
+         url('../fonts/PTS55F-webfont.ttf') format('truetype'),
+         url('../fonts/PTS55F-webfont.svg#pt_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  margin-right: 1em;
+  border-radius: 100%;
+  border: 1px solid;
+  /* padding: 0.5em; */
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px !important;
+}
+
+.transitions {
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.sf-full-width {
+    max-width: 100%;
+}
+.sf-txt-align-c {
+    text-align: center;
+}
+.sf-txt-align-r {
+    text-align: right;
+}
+#sticky-footer {
+    position:fixed;
+    bottom:0px;
+    background:lightslategrey;
+    width:100%;
+    height: 0px;
+    display: table;
+    bottom: -300px;
+}
+.puff {
+    display: table;
+    background:snow;
+    padding: 1em;
+    min-height: 100px;
+    border-right: #cacaca 1px solid;
+    margin: 1em 0;
+}
+.puff:last-child {
+    border-right: none;
+    float: none !important;
+}
+.puff section {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#sticky-footer p {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 0.9em;
+}
+figure {
+    margin:0;
+    float: left;
+    margin-right: 1em;
+}
+#sticky-footer .sf-thumb {
+    display: inline-block;
+}
+#sticky-footer .sf-thumb img {
+    max-width: 100%;
+    margin-right: 1em;
+}
+.sf-button {
+    -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #5B5B5B;
+  font-size: 10px;
+  background: #ffffff;
+  padding: 5px 10px 5px 10px;
+  border: solid #cacaca 1px;
+  text-decoration: none;
+  margin-bottom: 0px;
+
+}
+button:focus {outline:0;}
+
+#sticky-footer.slide-up {
+   bottom: 0px;
+}
+@media screen and (max-width: 63.9375em) {
+  .puff {
+    width: 33.333333%;
+  }
+  #sticky-footer .columns:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 640px) {
+
+}
+
+
+
