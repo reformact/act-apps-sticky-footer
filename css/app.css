@@ -34,8 +34,11 @@ i {
     transition: all .5s ease;
 }
 
-.sf-full-width {
+.sf-width-full {
     max-width: 100%;
+}
+.sf-width-33 {
+  width: 33%;
 }
 .sf-txt-align-c {
     text-align: center;
@@ -50,7 +53,6 @@ i {
     width:100%;
     height: 0px;
     display: table;
-    bottom: -300px;
 }
 .puff {
     display: table;
@@ -102,7 +104,7 @@ figure {
 button:focus {outline:0;}
 
 #sticky-footer.slide-up {
-   bottom: 0px;
+   bottom: 0px !important;
 }
 /*@media screen and (max-width: 63.9375em) {
   .puff {

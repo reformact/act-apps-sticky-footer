@@ -22,16 +22,19 @@ var fourQuarter = (oneQuarter * 4) - wH;
 // });
 
 
-	var lastScrollTop = 0;
-	$(document).on('scroll', function () {
-	   var st = $(window).scrollTop();
-	   if (st > lastScrollTop){
-	      $("#sticky-footer").addClass("slide-up");
-	   } else {
-	      $("#sticky-footer").removeClass("slide-up");
-	   }
-	   lastScrollTop = st;
-	});
+var lastScrollTop = 0;
+var sfHeight = $("#sticky-footer").outerHeight(true);
+$("#sticky-footer").css({"bottom":-sfHeight});
+$(document).on('scroll', function () {
+
+   var st = $(window).scrollTop();
+   if (st > lastScrollTop){
+      $("#sticky-footer").addClass("slide-up");
+   } else {
+      $("#sticky-footer").removeClass("slide-up");
+   }
+   lastScrollTop = st;
+});
 
 
 
