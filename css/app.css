@@ -1,12 +1,29 @@
 @font-face {
-    font-family: 'pt_sansregular';
-    src: url('../fonts/PTS55F-webfont.eot');
-    src: url('../fonts/PTS55F-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/PTS55F-webfont.woff') format('woff'),
-         url('../fonts/PTS55F-webfont.ttf') format('truetype'),
-         url('../fonts/PTS55F-webfont.svg#pt_sansregular') format('svg');
+    font-family: 'robotomedium';
+    src: url('../fonts/Roboto-Medium-webfont.eot');
+    src: url('../fonts/Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Medium-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Medium-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Medium-webfont.svg#robotomedium') format('svg');
     font-weight: normal;
     font-style: normal;
+
+}
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/Roboto-Bold-webfont.eot');
+    src: url('../fonts/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Roboto-Bold-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
 }
 @font-face {
   font-family: 'FontAwesome';
@@ -35,29 +52,12 @@ i {
 .sf-width-full {
   max-width: 100%;
 }
-.sf-width-33 {
-  width: 33%;
-}
+
 .sf-txt-align-c {
   text-align: center;
 }
 .sf-txt-align-r {
   text-align: right;
-}
-.sf-button {
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  color: #5B5B5B;
-  font-size: 10px;
-  background: #ffffff;
-  padding: 5px 10px 5px 10px;
-  border: solid #cacaca 1px;
-  text-decoration: none;
-  margin-bottom: 0px;
-}
-.sf-button:focus {
-  outline:0;
 }
 
 #sticky-footer {
@@ -67,6 +67,10 @@ i {
   width:100%;
   height: 0px;
   display: table;
+  font-family: 'San Francisco', Arial, Helvetica, sans-serif;
+  color: #5B5B5B;
+  border-top: 1px solid #D9D9D9;
+  letter-spacing: 0.5px;
 }
 
 #sticky-footer p {
@@ -76,16 +80,31 @@ i {
 }
 figure {
   margin:0;
-  float: left;
-  margin-right: 1em;
-  max-width: 100px;
+  max-width: 50px;
 }
-#sticky-footer .sf-thumb {
+#sticky-footer .sf-raknare {
   display: inline-block;
 }
-#sticky-footer .sf-thumb img {
+#sticky-footer .sf-raknare img {
   max-width: 100%;
-  margin-right: 1em;
+  margin-top: 10px;
+}
+.sf-button {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  color: #5B5B5B;
+  font-size: 10px;
+  background: #ffffff;
+  width: 75px;
+  height: 15px;
+  border: solid #cacaca 1px;
+  text-decoration: none;
+  margin-bottom: 0px;
+  font-family: 'San Francisco', Arial, Helvetica, sans-serif;
+}
+.sf-button:focus {
+  outline:0;
 }
 
 #sticky-footer.slide-up {
@@ -94,11 +113,8 @@ figure {
 
 .puff {
   display: table;
-  background:snow;
-  padding: 1em;
-  min-height: 100px;
-  border-right: #cacaca 1px solid;
-  margin: 1em 0;
+  background: #fff;
+  min-height: 66px;
 }
 .puff:last-child {
   border-right: none;
@@ -108,5 +124,20 @@ figure {
   display: table-cell;
   vertical-align: middle;
 }
+.puff::after {
+  content: "";
+  border-right: #E6E6E6 1px solid;
+  position: relative;
+  display: inline-block;
+  left: 1em;
+  height: 40px;
+  top: 1em;
+}
 
+#sf-puff-3 p {
+  border-bottom: 1px solid #E6E6E6;
+  padding-bottom: 6px;
+  display:inline-block;
+}
+ 
 
